@@ -1,0 +1,6 @@
+{
+  "appName": "Demo Github Actions",
+  "version": "1.0.0",
+  "environment": "production",
+  "logLevel": "info"
+}
