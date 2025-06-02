@@ -23,7 +23,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with:
           args: >
-            -Dsonar.projectKey=alfianmutaqin01_Demo-github-actions
+            -Dsonar.projectKey=alfianmutaqin01_Demo-Github-Actions
             -Dsonar.organization=alfianmutaqin01
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
             -Dsonar.sources=src
