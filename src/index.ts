@@ -6,8 +6,6 @@ const app = express();
 
 let server;
 
-// setup cors.
-
 app.use(
   cors({
     origin: "*",
@@ -16,20 +14,14 @@ app.use(
   })
 );
 
-// setup body parser.
-
 app.use(body.json({ limit: "100kb" }));
-
-// load all routes.
-
 app.use("/recipes", require("./routes/recipes"));
 
 async function startServer() {
   try {
-    // Load express app to listen on config port.
-    const port = 3000
+    const port = 3000;
     server = app.listen(port, () => {
-      console.log(`Service ready on :${port}`)
+      console.log(`Service ready on :${port}`);
     });
   } catch (error) {
     console.error("Failed to connect to the database:", error);

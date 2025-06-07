@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: recipe-api
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    autoDeploy: true
+    plan: free
+    region: oregon
+    branch: main
